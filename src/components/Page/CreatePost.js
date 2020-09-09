@@ -8,10 +8,9 @@ import {
   TextField,
   Button,
   Grid,
-  Link,
 } from "@material-ui/core";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import { useState } from "react";
+import { Link, useState } from "react";
 import { useHistory } from "react-router-dom";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import ButterToast, { Cinnamon } from "butter-toast";
@@ -168,7 +167,11 @@ export default function CreatePost() {
             Submit
           </Button>
           <Grid className={classes.link}>
-            <Link href="/" variant="body2">
+            <Link
+              to="/"
+              variant="body2"
+              style={{ color: "#3f51b5", textDecoration: "none" }}
+            >
               {"Back to home"}
             </Link>
           </Grid>
