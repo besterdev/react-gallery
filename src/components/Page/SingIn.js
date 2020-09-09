@@ -9,11 +9,10 @@ import {
   TextField,
   Button,
   Grid,
-  Link,
 } from "@material-ui/core";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -127,7 +126,7 @@ export default function SingIn() {
             Sign In
           </Button>
           <Grid className={classes.link}>
-            <Link href="/singup" variant="body2">
+            <Link to="/singup" variant="body2" style={{color: '#3f51b5', textDecoration: 'none' }}>
               {"You have an account ?"}
             </Link>
           </Grid>

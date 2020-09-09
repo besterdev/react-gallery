@@ -75,7 +75,7 @@ export default function SingUp() {
             ),
           });
           // alert(JSON.stringify(data.message));
-          history.push("/");
+          history.goBack("/");
         }
         console.log(data);
       });
