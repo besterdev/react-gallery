@@ -8,10 +8,9 @@ import {
   TextField,
   Button,
   Grid,
-  Link,
 } from "@material-ui/core";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import ButterToast, { Cinnamon } from "butter-toast";
 import { AssignmentTurnedIn } from "@material-ui/icons";
 
@@ -142,7 +141,11 @@ export default function SingUp() {
             Sign In
           </Button>
           <Grid className={classes.link}>
-            <Link href="/" variant="body2">
+            <Link
+              to="/"
+              variant="body2"
+              style={{ color: "#3f51b5", textDecoration: "none" }}
+            >
               {"Don't have an account ?"}
             </Link>
           </Grid>
